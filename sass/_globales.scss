@@ -32,8 +32,8 @@ footer{
     text-align: center;
 }
 .div_inst_tw{
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     margin-right: 20px;
     margin-top: 10px;
 }
@@ -48,4 +48,75 @@ p{
     text-align: left;
     text-decoration: underline yellow;
     margin: 10px 0px 10px 10px;
+}
+.imagen_carousel{
+    margin: 20px 0px 10px 0px;
+    width: 1116px;
+    height: 730px;
+}
+//BIBLIOGRAFIA// 
+.color_fondo{
+    background-color: blueviolet;
+    margin: 10px 0px 20px 0px;
+}
+.color_texto{
+    color: blueviolet;
+}
+.borde_card{
+    color: blueviolet;
+    margin: 10px 0px 20px 0px;
+}
+//CONTACTO//
+.color_fondo_contacto{
+    background-color: blueviolet;
+}
+.posicion_formulario{
+    margin-top: 15%;
+    margin-bottom: 100px;
+}
+.posicion_formulario1{
+    margin-top: 15px;
+}
+.posicion_formulario2{
+    margin-top: 15px;
+    margin-bottom: 230px;
+}
+//GALERIA8-TABLET//
+
+@media (min-width: 768px){
+    .img_8{
+        width: 360px;
+        height: 201.85px;
+        border-radius: 10px;
+        margin-left: 5px;
+        margin-top: 10px;
+        
+        
+    }
+    .img_8_izq{
+        width: 360px;
+        height: 201.85px;
+        border-radius: 10px;
+        margin-right: 5px;
+        margin-top: 10px;
+        
+        
+    } 
+    .img_8_ult{
+        width: 360px;
+        height: 201.85px;
+        border-radius: 10px;
+        margin-right: 5px;
+        margin-top: 10px;
+    }   
+}
+@media (min-width: 1028px){
+    .img_8_ult{
+        width: 1140px;
+        height: 611.045px;
+        border-radius: 10px;
+        margin-right: 5px;
+        margin-top: 10px;
+        
+    }
 }
