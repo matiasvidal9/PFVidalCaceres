@@ -102,6 +102,10 @@ p {
   border-color: blueviolet;
 }
 
+.color_texto {
+  color: blueviolet;
+}
+
 .color_fondo_contacto {
   background-color: blueviolet;
 }
