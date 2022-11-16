@@ -44,9 +44,14 @@
 }
 
 .color__letra {
+  box-shadow: inset 0 0 0 0 blueviolet;
   color: yellow;
+  margin: 0;
+  padding: 0;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 .color__letra:hover {
+  box-shadow: inset 100px 0 0 0 yellow;
   color: blueviolet;
 }
 
@@ -81,18 +86,20 @@ p {
   height: 730px;
 }
 
-.color_fondo {
+.tarjetablueviolet {
   background-color: blueviolet;
-  margin: 10px 0px 20px 0px;
 }
 
-.color_texto {
-  color: blueviolet;
+.tarjetayellow {
+  background-color: yellow;
 }
 
-.borde_card {
-  color: blueviolet;
-  margin: 10px 0px 20px 0px;
+.bordeyellow {
+  border-color: yellow;
+}
+
+.bordeblueviolet {
+  border-color: blueviolet;
 }
 
 .color_fondo_contacto {
@@ -138,8 +145,8 @@ p {
 }
 @media (min-width: 1028px) {
   .img_8_ult {
-    width: 1140px;
-    height: 611.045px;
+    width: 1272.17px;
+    height: 715.598px;
     border-radius: 10px;
     margin-right: 5px;
     margin-top: 10px;

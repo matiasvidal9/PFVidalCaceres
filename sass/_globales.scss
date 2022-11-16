@@ -1,4 +1,5 @@
-//FONDO,NAV Y FOOTER//
+
+//FONDO,NAV Y FOOTER
 .fondo_negro {
     background-color: black;
 }
@@ -22,10 +23,15 @@
     margin-right: 10px;
 }
 .color__letra{
-    color: yellow;
-                &:hover{
-                    color: blueviolet;
-             }
+    box-shadow: inset 0 0 0 0 blueviolet;
+    color:yellow;
+    margin: 0 ;
+    padding: 0 ;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+            &:hover{
+                box-shadow: inset 100px 0 0 0 yellow;
+                color: blueviolet;
+            }
 }
 footer{
     background-color: yellow;
@@ -54,17 +60,17 @@ p{
     width: 1116px;
     height: 730px;
 }
-//BIBLIOGRAFIA// 
-.color_fondo{
-    background-color: blueviolet;
-    margin: 10px 0px 20px 0px;
+//BIBLIOGRAFIA//
+
+@each $color in blueviolet, yellow {
+    .tarjeta#{$color} {
+         background-color: $color ;
+    }
 }
-.color_texto{
-    color: blueviolet;
-}
-.borde_card{
-    color: blueviolet;
-    margin: 10px 0px 20px 0px;
+@each $color in yellow, blueviolet {
+    .borde#{$color}{
+        border-color: $color;
+    }
 }
 //CONTACTO//
 .color_fondo_contacto{
@@ -112,8 +118,8 @@ p{
 }
 @media (min-width: 1028px){
     .img_8_ult{
-        width: 1140px;
-        height: 611.045px;
+        width: 1272.17px;
+        height: 715.598px;
         border-radius: 10px;
         margin-right: 5px;
         margin-top: 10px;
